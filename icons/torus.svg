@@ -1,0 +1,23 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="torusGradient" cx="0.3" cy="0.3" r="0.8">
+      <stop offset="0%" stop-color="#ff9500"/>
+      <stop offset="30%" stop-color="#ff7b00"/>
+      <stop offset="70%" stop-color="#e85d00"/>
+      <stop offset="100%" stop-color="#cc4400"/>
+    </radialGradient>
+    <radialGradient id="innerGradient" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="#994400" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#662200" stop-opacity="0.9"/>
+    </radialGradient>
+    <ellipse id="shadowFilter" cx="32" cy="58" rx="18" ry="3" fill="#000000" opacity="0.15"/>
+  </defs>
+  
+  <use href="#shadowFilter"/>
+  
+  <ellipse cx="32" cy="32" rx="22" ry="22" fill="url(#torusGradient)" transform="perspective(800px) rotateX(15deg)"/>
+  
+  <ellipse cx="32" cy="31" rx="8" ry="8" fill="url(#innerGradient)"/>
+  
+  <ellipse cx="28" cy="26" rx="4" ry="2" fill="#ffaa33" opacity="0.6" transform="rotate(-20 28 26)"/>
+</svg>

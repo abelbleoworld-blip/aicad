@@ -1,0 +1,42 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rulerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#007aff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0051d5;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Ruler -->
+  <rect x="8" y="20" width="40" height="8" rx="2" ry="2" fill="url(#rulerGrad)" stroke="#d1d5db" stroke-width="0.5" filter="url(#shadow)"/>
+  
+  <!-- Ruler markings -->
+  <line x1="12" y1="20" x2="12" y2="25" stroke="#6b7280" stroke-width="0.5"/>
+  <line x1="16" y1="22" x2="16" y2="26" stroke="#6b7280" stroke-width="0.5"/>
+  <line x1="20" y1="20" x2="20" y2="25" stroke="#6b7280" stroke-width="0.5"/>
+  <line x1="24" y1="22" x2="24" y2="26" stroke="#6b7280" stroke-width="0.5"/>
+  <line x1="28" y1="20" x2="28" y2="25" stroke="#6b7280" stroke-width="0.5"/>
+  <line x1="32" y1="22" x2="32" y2="26" stroke="#6b7280" stroke-width="0.5"/>
+  <line x1="36" y1="20" x2="36" y2="25" stroke="#6b7280" stroke-width="0.5"/>
+  <line x1="40" y1="22" x2="40" y2="26" stroke="#6b7280" stroke-width="0.5"/>
+  <line x1="44" y1="20" x2="44" y2="25" stroke="#6b7280" stroke-width="0.5"/>
+  
+  <!-- Dimension line -->
+  <line x1="16" y1="40" x2="48" y2="40" stroke="url(#lineGrad)" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Arrow ends -->
+  <polygon points="16,37 12,40 16,43" fill="url(#lineGrad)" filter="url(#shadow)"/>
+  <polygon points="48,37 52,40 48,43" fill="url(#lineGrad)" filter="url(#shadow)"/>
+  
+  <!-- Dimension text background -->
+  <rect x="28" y="36" width="8" height="8" rx="2" ry="2" fill="#ffffff" stroke="url(#lineGrad)" stroke-width="1" filter="url(#shadow)"/>
+  
+  <!-- Dimension text -->
+  <text x="32" y="42" font-family="-apple-system,BlinkMacSystemFont" font-size="6" font-weight="500" text-anchor="middle" fill="url(#lineGrad)">24</text>
+</svg>

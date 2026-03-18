@@ -1,0 +1,41 @@
+#!/bin/bash
+# AICAD — AI-Powered CAD System
+# Launcher script
+
+FREECAD_APP="/Applications/FreeCAD.app"
+AICAD_DIR="$(cd "$(dirname "$0")/.." && pwd)"
+
+echo "
+   █████╗ ██╗ ██████╗ █████╗ ██████╗
+  ██╔══██╗██║██╔════╝██╔══██╗██╔══██╗
+  ███████║██║██║     ███████║██║  ██║
+  ██╔══██║██║██║     ██╔══██║██║  ██║
+  ██║  ██║██║╚██████╗██║  ██║██████╔╝
+  ╚═╝  ╚═╝╚═╝ ╚═════╝╚═╝  ╚═╝╚═════╝
+  AI-Powered CAD System v1.0
+"
+
+# Install theme if needed
+if [ ! -f "$FREECAD_APP/Contents/Resources/share/Gui/Stylesheets/aicad.qss" ]; then
+    echo "Installing AICAD theme..."
+    cp "$AICAD_DIR/theme/aicad.qss" "$FREECAD_APP/Contents/Resources/share/Gui/Stylesheets/" 2>/dev/null
+fi
+
+# Install addon if needed
+ADDON_DIR="$HOME/Library/Application Support/FreeCAD/Mod/FreecadAITool"
+if [ -d "$AICAD_DIR/addon" ] && [ -d "$ADDON_DIR" ]; then
+    cp "$AICAD_DIR/addon/"*.py "$ADDON_DIR/" 2>/dev/null
+fi
+
+# Kill stale server
+lsof -ti:8765 2>/dev/null | xargs kill -9 2>/dev/null
+
+# Launch
+if [ -n "$1" ]; then
+    open -a "$FREECAD_APP" "$1"
+else
+    open -a "$FREECAD_APP"
+fi
+
+echo "AICAD started. API: http://127.0.0.1:8765"
+echo "Terminal: AI tab in bottom panel"

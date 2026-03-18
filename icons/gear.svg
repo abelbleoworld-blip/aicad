@@ -1,0 +1,24 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gearGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f0f0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d0d0d0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="centerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8e8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c8c8c8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <g filter="url(#shadow)">
+    <path d="M32 8l2.5 4.3 4.9-0.8 1.5 4.8 4.8 1.5-0.8 4.9L48.7 24l0.8 4.9-4.8 1.5-1.5 4.8-4.9-0.8L36.5 39l-4.5 0-2.5-4.3-4.9 0.8-1.5-4.8-4.8-1.5 0.8-4.9L15.3 24-16.1 19.2l4.8-1.5 1.5-4.8 4.9 0.8L27.5 8z" fill="url(#gearGradient)" stroke="#b0b0b0" stroke-width="0.5"/>
+    
+    <path d="M32 4.5l3.2 5.5 6.2-1 1.9 6.1 6.1 1.9-1 6.2L54.5 26l1 6.2-6.1 1.9-1.9 6.1-6.2-1L38.1 45l-6.1 0-3.2-5.5-6.2 1-1.9-6.1-6.1-1.9 1-6.2L9.5 26-10.5 19.8l6.1-1.9 1.9-6.1 6.2 1L25.9 7z" fill="url(#gearGradient)" stroke="#b0b0b0" stroke-width="0.5"/>
+    
+    <circle cx="32" cy="32" r="8" fill="url(#centerGradient)" stroke="#b0b0b0" stroke-width="0.5"/>
+    <circle cx="32" cy="32" r="4" fill="none" stroke="#a0a0a0" stroke-width="0.5"/>
+  </g>
+</svg>

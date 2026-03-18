@@ -1,0 +1,43 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="planeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8f9fa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pencilGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4fc3f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2196f3;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+    <filter id="innerShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0.5" stdDeviation="1" flood-color="#000000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  
+  <!-- Background plane -->
+  <rect x="8" y="12" width="36" height="36" rx="4" fill="url(#planeGrad)" filter="url(#shadow)" stroke="#d6d9dc" stroke-width="0.5"/>
+  
+  <!-- Grid lines -->
+  <g stroke="#c7cdd3" stroke-width="0.5" opacity="0.6">
+    <line x1="17" y1="12" x2="17" y2="48"/>
+    <line x1="26" y1="12" x2="26" y2="48"/>
+    <line x1="35" y1="12" x2="35" y2="48"/>
+    <line x1="8" y1="21" x2="44" y2="21"/>
+    <line x1="8" y1="30" x2="44" y2="30"/>
+    <line x1="8" y1="39" x2="44" y2="39"/>
+  </g>
+  
+  <!-- Pencil body -->
+  <rect x="32" y="16" width="24" height="4" rx="2" fill="url(#pencilGrad)" filter="url(#shadow)" transform="rotate(45 44 18)"/>
+  
+  <!-- Pencil tip -->
+  <polygon points="52,24 54,26 52,28" fill="#ffb74d" transform="rotate(45 53 26)"/>
+  
+  <!-- Pencil highlight -->
+  <rect x="33" y="16.5" width="20" height="1" rx="0.5" fill="#ffffff" opacity="0.4" transform="rotate(45 43 17)"/>
+  
+  <!-- Small sketch line -->
+  <path d="M20 26 Q24 24 28 26" stroke="#2196f3" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+</svg>

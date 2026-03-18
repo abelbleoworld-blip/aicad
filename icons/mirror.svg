@@ -1,0 +1,31 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shapeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#357ABD;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="reflectionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#4682B4;stop-opacity:0.4" />
+    </linearGradient>
+    <filter id="softShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1"/>
+      <feOffset dx="0" dy="1" result="offset"/>
+      <feFlood flood-color="#000000" flood-opacity="0.15"/>
+      <feComposite in2="offset" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Original shape -->
+  <path d="M16 20 L28 12 L28 28 L20 36 L12 32 Z" fill="url(#shapeGradient)" filter="url(#softShadow)"/>
+  
+  <!-- Dashed symmetry line -->
+  <line x1="32" y1="8" x2="32" y2="56" stroke="#999999" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.8"/>
+  
+  <!-- Reflected shape -->
+  <path d="M48 20 L36 12 L36 28 L44 36 L52 32 Z" fill="url(#reflectionGradient)" filter="url(#softShadow)"/>
+</svg>

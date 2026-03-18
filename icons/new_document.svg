@@ -1,0 +1,28 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pageGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5f5f5;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Document Shadow -->
+  <path d="M14 10 L42 10 L50 18 L50 54 L14 54 Z" fill="rgba(0,0,0,0.08)" transform="translate(1,1)"/>
+  
+  <!-- Document Body -->
+  <path d="M14 10 L42 10 L50 18 L50 54 L14 54 Z" fill="url(#pageGradient)" filter="url(#shadow)"/>
+  
+  <!-- Document Corner Fold -->
+  <path d="M42 10 L42 18 L50 18 Z" fill="rgba(0,0,0,0.06)"/>
+  <path d="M42 10 L42 18 L50 18 Z" fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="0.5"/>
+  
+  <!-- Document Border -->
+  <path d="M14 10 L42 10 L50 18 L50 54 L14 54 Z" fill="none" stroke="rgba(0,0,0,0.1)" stroke-width="0.5"/>
+  
+  <!-- Plus Sign -->
+  <rect x="30" y="24" width="4" height="16" rx="2" fill="#007AFF"/>
+  <rect x="24" y="30" width="16" height="4" rx="2" fill="#007AFF"/>
+</svg>

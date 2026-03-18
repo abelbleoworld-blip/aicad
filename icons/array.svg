@@ -1,0 +1,45 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cubeGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f0f0"/>
+      <stop offset="100%" stop-color="#d0d0d0"/>
+    </linearGradient>
+    <linearGradient id="cubeGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8e8e8"/>
+      <stop offset="100%" stop-color="#c8c8c8"/>
+    </linearGradient>
+    <linearGradient id="cubeGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0e0e0"/>
+      <stop offset="100%" stop-color="#c0c0c0"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="1" flood-opacity="0.15" stdDeviation="1"/>
+    </filter>
+  </defs>
+  
+  <g filter="url(#shadow)">
+    <!-- Row 1 -->
+    <rect x="8" y="8" width="10" height="10" rx="1.5" fill="url(#cubeGrad1)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="22" y="8" width="10" height="10" rx="1.5" fill="url(#cubeGrad2)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="36" y="8" width="10" height="10" rx="1.5" fill="url(#cubeGrad3)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="50" y="8" width="10" height="10" rx="1.5" fill="url(#cubeGrad1)" stroke="#bbb" stroke-width="0.5"/>
+    
+    <!-- Row 2 -->
+    <rect x="8" y="22" width="10" height="10" rx="1.5" fill="url(#cubeGrad2)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="22" y="22" width="10" height="10" rx="1.5" fill="url(#cubeGrad3)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="36" y="22" width="10" height="10" rx="1.5" fill="url(#cubeGrad1)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="50" y="22" width="10" height="10" rx="1.5" fill="url(#cubeGrad2)" stroke="#bbb" stroke-width="0.5"/>
+    
+    <!-- Row 3 -->
+    <rect x="8" y="36" width="10" height="10" rx="1.5" fill="url(#cubeGrad3)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="22" y="36" width="10" height="10" rx="1.5" fill="url(#cubeGrad1)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="36" y="36" width="10" height="10" rx="1.5" fill="url(#cubeGrad2)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="50" y="36" width="10" height="10" rx="1.5" fill="url(#cubeGrad3)" stroke="#bbb" stroke-width="0.5"/>
+    
+    <!-- Row 4 -->
+    <rect x="8" y="50" width="10" height="10" rx="1.5" fill="url(#cubeGrad1)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="22" y="50" width="10" height="10" rx="1.5" fill="url(#cubeGrad2)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="36" y="50" width="10" height="10" rx="1.5" fill="url(#cubeGrad3)" stroke="#bbb" stroke-width="0.5"/>
+    <rect x="50" y="50" width="10" height="10" rx="1.5" fill="url(#cubeGrad1)" stroke="#bbb" stroke-width="0.5"/>
+  </g>
+</svg>

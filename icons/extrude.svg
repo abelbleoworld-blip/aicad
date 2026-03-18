@@ -1,0 +1,36 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="baseGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8E8E8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8B8B8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="extrudeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2C5AA0;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" flood-opacity="0.2" flood-color="#000000" stdDeviation="2"/>
+    </filter>
+  </defs>
+  
+  <!-- Base 2D shape shadow -->
+  <rect x="12" y="42" width="24" height="16" rx="2" fill="#000" opacity="0.1"/>
+  
+  <!-- Base 2D shape -->
+  <rect x="10" y="40" width="24" height="16" rx="2" fill="url(#baseGrad)" filter="url(#shadow)"/>
+  
+  <!-- Extruded 3D shape -->
+  <g transform="translate(18, -8)">
+    <!-- Top face -->
+    <rect x="10" y="20" width="24" height="16" rx="2" fill="url(#extrudeGrad)" filter="url(#shadow)"/>
+    <!-- Right face -->
+    <path d="M34 22 L40 16 L40 32 L34 36 Z" fill="#1A4480" opacity="0.8"/>
+    <!-- Front face -->
+    <path d="M12 36 L36 36 L40 32 L40 16 L34 20 L10 20 Z" fill="#326BC4" opacity="0.9"/>
+  </g>
+  
+  <!-- Arrow -->
+  <g transform="translate(46, 26)">
+    <path d="M6 0 L10 4 L8 4 L8 12 L4 12 L4 4 L2 4 Z" fill="url(#extrudeGrad)" filter="url(#shadow)"/>
+  </g>
+</svg>
